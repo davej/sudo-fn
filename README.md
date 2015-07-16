@@ -1,10 +1,10 @@
 sudo-fn
-======
+=======
 
 Call a node function with sudo privileges (prompts the user for admin privileges with a native OS X dialog).
 Uses [sudo-prompt](https://www.npmjs.com/package/sudo-prompt) and [cmd-fn](https://www.npmjs.com/package/cmd-fn).
 
-** Note: OS X Only **
+**Note: OS X Only**
 
 Installation
 ------------
@@ -47,7 +47,7 @@ The requested function is called in a child process, use absolute paths for non-
 Examples
 --------
 
-** Simple Local Module Example **
+**Simple Local Module Example**
 
 If I wanted to do the equivalent of:
 ```javascript
@@ -65,7 +65,7 @@ sudoFn({
 
 ********
 
-** Node Callback Example **
+**Node Callback Example**
 
 If I wanted to read a privileged admin directory:
 
