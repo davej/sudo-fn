@@ -1,0 +1,23 @@
+{
+  "name": "sudo-fn",
+  "version": "1.0.0",
+  "description": "Call a node function with sudo privileges (prompts the user for admin privileges with a native OS X dialog)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/davej/sudo-fn.git"
+  },
+  "author": "Dave Jeffery",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davej/sudo-fn/issues"
+  },
+  "homepage": "https://github.com/davej/sudo-fn#readme",
+  "dependencies": {
+    "cmd-fn": "^1.1.1",
+    "sudo-prompt": "^1.1.2"
+  }
+}
