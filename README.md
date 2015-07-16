@@ -2,9 +2,10 @@ sudo-fn
 =======
 
 Call a node function with sudo privileges (prompts the user for admin privileges with a native OS X dialog).
-Uses [sudo-prompt](https://www.npmjs.com/package/sudo-prompt) and [cmd-fn](https://www.npmjs.com/package/cmd-fn).
 
 **Note: OS X Only**
+
+Uses [sudo-prompt](https://www.npmjs.com/package/sudo-prompt) and [cmd-fn](https://www.npmjs.com/package/cmd-fn).
 
 Installation
 ------------
