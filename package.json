@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/davej/sudo-fn#readme",
   "dependencies": {
-    "cmd-fn": "^1.1.1",
+    "cmd-fn": "^1.2.0",
     "sudo-prompt": "^1.1.2"
   }
 }
