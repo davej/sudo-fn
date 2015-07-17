@@ -79,7 +79,7 @@ Then I could do:
 sudoFn({
   module: 'fs',
   function: 'readdir',
-  params: ['/var/tmp'],
+  params: ['/var/audit'],
   type: 'node-callback'
 }, cb);
 ```
