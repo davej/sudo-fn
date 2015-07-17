@@ -1,6 +1,6 @@
 {
   "name": "sudo-fn",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Call a node function with sudo privileges (prompts the user for admin privileges with a native OS X dialog)",
   "main": "index.js",
   "scripts": {
