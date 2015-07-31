@@ -6,6 +6,12 @@ var setName = sudo.setName;
 var call = function(options, cb) {
   var cmd = process.execPath + ' ' + cmdFnPath;
 
+  if (process.execPath.indexOf("/Contents/MacOS/Electron") >= 0) {
+    // If we're running in Electron then make sure that the process is being
+    // run in node mode not as the GUI app.
+    cmd = 'ATOM_SHELL_INTERNAL_RUN_AS_NODE=1 ' + cmd;
+  }
+
   if (options.module) {
     cmd = cmd + ' --module ' + options.module;
   } else {
