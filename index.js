@@ -4,7 +4,8 @@ var cmdFnPath = require.resolve('cmd-fn');
 var setName = sudo.setName;
 
 var call = function(options, cb) {
-  var cmd = process.execPath + ' ' + cmdFnPath;
+  // Put paths inside quotes so spaces don't need to be escaped
+  var cmd = '"' + process.execPath +'" "' + cmdFnPath + '"';
 
   if (process.execPath.indexOf("/Contents/MacOS/Electron") >= 0) {
     // If we're running in Electron then make sure that the process is being
