@@ -7,7 +7,7 @@ var call = function(options, cb) {
   // Put paths inside quotes so spaces don't need to be escaped
   var cmd = '"' + process.execPath +'" "' + cmdFnPath + '"';
 
-  if (process.execPath.indexOf("/Contents/MacOS/Electron") >= 0) {
+  if (process.execPath.indexOf("Helper.app/Contents/MacOS") >= 0) {
     // If we're running in Electron then make sure that the process is being
     // run in node mode not as the GUI app.
     cmd = 'ATOM_SHELL_INTERNAL_RUN_AS_NODE=1 ' + cmd;
