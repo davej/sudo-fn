@@ -23,7 +23,8 @@ var call = function(options, cb) {
     cmd = cmd + ' --function ' + options.function;
   }
   if (options.params) {
-    cmd = cmd + ' --params \'' + JSON.stringify(options.params) + '\'';
+    var params = Array.isArray(options.params) ? options.params : [options.params];
+    cmd = cmd + ' --params \'' + JSON.stringify(params) + '\'';
   }
   if (options.cwd) {
     cmd = cmd + ' --cwd \'' + options.cwd + '\'';
