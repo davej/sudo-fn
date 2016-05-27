@@ -10,7 +10,7 @@ var call = function(options, cb) {
   if (process.execPath.indexOf("Helper.app/Contents/MacOS") >= 0) {
     // If we're running in Electron then make sure that the process is being
     // run in node mode not as the GUI app.
-    cmd = 'ATOM_SHELL_INTERNAL_RUN_AS_NODE=1 ' + cmd;
+    cmd = 'ELECTRON_RUN_AS_NODE=1 ' + cmd;
   }
 
   if (options.module) {
